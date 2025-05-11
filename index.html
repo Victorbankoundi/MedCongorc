@@ -145,34 +145,53 @@
 </head>
 <body>
   <div class="container">
-    <% if (!isLoggedIn) { %>
-     <div class="container">
   <h2>Créer un compte MedCongoRC</h2>
   <form action="/inscription" method="post">
+    
     <label>Nom et prénom</label>
-    <input type="text" name="nom_prenom" required>
+    <div class="input-group">
+      <i class="fa fa-user"></i>
+      <input type="text" name="nom_prenom" placeholder="Ex. : Jean Mavoungou" required>
+    </div>
 
     <label>Date de naissance</label>
-    <input type="date" name="date_naissance" required>
-
-    <label>Lieu de naissance</label>
-    <input type="text" name="lieu_naissance
-<label>Sexe</label>
-    <select name="sexe" required>
-      <option value="">--Sélectionner--</option>
-      <option value="M">Masculin</option>
-      <option value="F">Féminin</option>
-    </select>
-
-    <label>Pays de résidence</label>
-    <input type="text" name="pays_residence" required>
+    <div class="input-group">
+      <i class="fa fa-calendar"></i>
+      <input type="date" name="date_naissance" required>
+    </div>
+<label>Lieu de naissance</label>
+    <div class="input-group">
+<label>Pays de résidence</label>
+    <div class="input-group">
+      <i class="fa fa-globe"></i>
+      <input type="text" name="pays_residence" placeholder="République du Congo, etc." required>
+    </div>
 
     <label>Profession</label>
-    <input type="text" name="profession" required>
+    <div class="input-group">
+      <i class="fa fa-briefcase"></i>
+      <input type="text" name="profession" placeholder="Pharmacien, Médecin..." required>
+    </div>
 
     <label>Numéro d'ordre</label>
-    <input type="text" name="numero_ordre" required>
+    <div class="input-group">
+      <i class="fa fa-id-badge"></i>
+      <input type="text" name="numero_ordre" placeholder="Numéro professionnel (si applicable)" required>
+      <small>Attribué par votre Ordre professionnel national</small>
+    </div>
+      <i class="fa fa-location-dot"></i>
+      <input type="text" name="lieu_naissance" placeholder="Brazzaville, Pointe-Noire..." required>
+    </div>
 
+    <label>Sexe</label>
+    <div class="input-group">
+      <i class="fa fa-venus-mars"></i>
+      <select name="sexe" required>
+        <option value="">--Sélectionner--</option>
+        <option value="M">Masculin</option>
+        <option value="F">Féminin</option>
+      </select>
+    </div>
     <label>Email</label>
     <input type="email" name="email" required>
 
