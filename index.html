@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MedCongoRC - Base publique de médicaments</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <img src="logo.png" alt="Logo MedCongoRC" class="logo">
+    <h1>MedCongoRC</h1>
+    <nav>
+      <a href="#">Accueil</a>
+      <a href="#medicaments">Médicaments</a>
+      <a href="#apropos">À propos</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <div class="container" id="accueil">
+    <h2>Bienvenue sur MedCongoRC</h2>
+    <p>La base de données publique des médicaments disponibles en République du Congo.</p>
+  </div>
+
+  <div class="container" id="medicaments">
+    <h2>Médicaments</h2>
+    <input class="search-box" type="text" id="searchInput" placeholder="Rechercher un médicament...">
+    <table id="medTable">
+      <thead>
+        <tr>
+          <th>Nom</th>
+          <th>DCI</th>
+          <th>Classe</th>
+          <th>Présentation</th>
+          <th>Indications</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Paracétamol</td>
+          <td>Paracetamol</td>
+          <td>Antalgique/Antipyrétique</td>
+          <td>Comprimé 500mg</td>
+          <td>Douleur légère à modérée, fièvre</td>
+        </tr>
+        <tr>
+          <td>Amoxicilline</td>
+          <td>Amoxicillin</td>
+          <td>Antibiotique pénicilline</td>
+          <td>Gélule 500mg</td>
+          <td>Infections ORL, urinaires, etc.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="container" id="apropos">
+    <h2>À propos</h2>
+    <p>MedCongoRC est un projet initié par le Dr Victor, pharmacien en République du Congo, pour fournir un accès libre et à jour aux informations sur les médicaments autorisés dans le pays.</p>
+  </div>
+
+  <div class="container" id="contact">
+    <h2>Contact</h2>
+    <p>Pour toute suggestion ou mise à jour, veuillez écrire à : <strong>contact@medcongo.rc</strong></p>
+  </div>
+
+  <footer>
+    <img src="logo.png" alt="Logo MedCongoRC" style="height: 30px; vertical-align: middle; margin-right: 10px;">
+    &copy; 2025 MedCongoRC - Tous droits réservés
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
