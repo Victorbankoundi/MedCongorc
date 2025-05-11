@@ -178,31 +178,26 @@
       <i class="fa fa-id-badge"></i>
       <input type="text" name="numero_ordre" placeholder="Numéro professionnel (si applicable)" required>
       <small>Attribué par votre Ordre professionnel national</small>
-    </div>
-      <i class="fa fa-location-dot"></i>
-      <input type="text" name="lieu_naissance" placeholder="Brazzaville, Pointe-Noire..." required>
-    </div>
-
-    <label>Sexe</label>
-    <div class="input-group">
-      <i class="fa fa-venus-mars"></i>
-      <select name="sexe" required>
-        <option value="">--Sélectionner--</option>
-        <option value="M">Masculin</option>
-        <option value="F">Féminin</option>
-      </select>
-    </div>
     <label>Email</label>
-    <input type="email" name="email" required>
+    <div class="input-group">
+      <i class="fa fa-envelope"></i>
+      <input type="email" name="email" placeholder="exemple@domaine.com" required>
+    </div>
 
     <label>Mot de passe</label>
-    <input type="password" name="password"
-<label>Confirmer le mot de passe</label>
-    <input type="password" name="confirm_password" required>
+    <div class="input-group">
+      <i class="fa fa-lock"></i>
+      <input type="password" name="password" placeholder="Votre mot de passe" required>
+    </div>
+
+    <label>Confirmer le mot de passe</label>
+    <div class="input-group">
+      <i class="fa fa-lock"></i>
+      <input type="password" name="confirm_password" placeholder="Répétez le mot de passe" required>
+    </div>
 
     <button type="submit">Valider</button>
   </form>
-
   <div class="footer-link">
     <p>Déjà inscrit ? <a href="/connexion">Se connecter</a></p>
     <p><a href="/reinitialisation">Mot de passe ou email oublié ?</a></p>
