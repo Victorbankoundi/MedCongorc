@@ -119,7 +119,17 @@
     <div><strong>MedCongoRC</strong></div>
     <div class="menu">
       <button class="menu-button">Menu</button> <div class="dropdown-content">   <a href="#">Accueil</a>
-        <a href="#">Connexion</a>
+        <a href="#">Connexion</a><!-- Connexion sous-section -->
+      <div style="padding: 10px; border-top: 1px solid #ccc;">
+        <strong>Connexion</strong>
+        <form action="/connexion" method="post">
+          <input type="email" placeholder="Adresse email" required>
+          <input type="password" placeholder="Mot de passe" required>
+          <button type="submit">Se connecter</button>
+        </form>
+        <a href="/inscription">Créer un compte</a>
+        <a href="/reinitialisation">Mot de passe ou email oublié ?</a>
+      </div>
         <a href="#">À propos</a>
         <a href="#">Nos contacts</a>
      
