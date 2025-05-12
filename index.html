@@ -77,7 +77,26 @@
         }
     </style>
 </head>
-<body class="bg-gray-50 font-sans">
+<script>
+    // Afficher la page d'inscription
+   <div class="mt-4 text-center">
+    <button id="backToLoginBtn" class="text-green-600 hover:text-green-500 text-sm font-medium">
+        Retour à la connexion
+    </button>
+</div> document.getElementById('showRegisterBtn').addEventListener('click', function () {
+        document.getElementById('loginPage').classList.add('hidden');
+        document.getElementById('registerPage').classList.remove('hidden');
+    });
+
+    // Bouton de retour à la connexion (à ajouter dans ta page d'inscription si ce n’est pas encore fait)
+    const backToLoginBtn = document.getElementById('backToLoginBtn');
+    if (backToLoginBtn) {
+        backToLoginBtn.addEventListener('click', function () {
+            document.getElementById('registerPage').classList.add('hidden');
+            document.getElementById('loginPage').classList.remove('hidden');
+        });
+    }
+</script><body class="bg-gray-50 font-sans">
     <!-- Page de connexion (page par défaut) -->
     <div id="loginPage" class="min-h-screen flex flex-col">
         <!-- Header avec logo -->
